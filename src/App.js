@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import CreateQr from "./components/CreateQr";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container ">
+      <h1 className="my-5 text-center display-2">QR-Code Generator</h1>
+      <div>
+        <CreateQr />
+      </div>
     </div>
   );
 }
